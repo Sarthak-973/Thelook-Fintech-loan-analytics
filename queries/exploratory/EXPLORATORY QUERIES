@@ -1,0 +1,34 @@
+/*
+====================================================
+📊 EXPLORATORY QUERIES
+Purpose: Initial data exploration and understanding
+====================================================
+*/
+
+-- 🔹 1. Explore loan table
+SELECT *
+FROM fintech.loan
+LIMIT 100;
+
+
+-- 🔹 2. Explore customers table
+SELECT *
+FROM fintech.customers
+LIMIT 100;
+
+
+-- 🔹 3. Loan status distribution
+SELECT 
+  loan_status, 
+  COUNT(*) AS total_loans
+FROM fintech.loan
+GROUP BY loan_status
+ORDER BY total_loans DESC;
+
+
+-- 🔹 4. Explore nested field (application.purpose)
+SELECT 
+  loan_id,
+  application.purpose AS purpose
+FROM fintech.loan
+LIMIT 100;
