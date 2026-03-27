@@ -5,8 +5,6 @@ These queries are used to clean, join, and transform raw data into structured da
 
 ---
 
-## 🔹 Queries
-
 🔹 1. Create State-Region Table
 ```sql
 CREATE OR REPLACE TABLE fintech.state_region (
