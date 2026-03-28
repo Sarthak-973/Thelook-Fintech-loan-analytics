@@ -68,7 +68,6 @@ Developed SQL-based datasets and a dashboard that provides insights into loan tr
 | Dimension | Details |
 |-----------|--------|
 | **In Scope** | Loan dataset analysis, SQL transformations, dashboard creation |
-| **Out of Scope** | Machine learning, predictive modeling |
 | **Time Period** | 2012 – 2019 |
 | **Granularity** | Loan-level data |
 
