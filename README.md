@@ -1,70 +1,217 @@
-# Data Project Documentation Template
+# 📊 TheLook Fintech Loan Analytics
+> End-to-end cloud data analytics project to analyze loan data and build an interactive dashboard for better decision-making.
 
-A production-ready GitHub template for documenting data analysis, SQL, dashboard, pipeline, and machine learning projects - with built-in examples, narrative guidance, and adaptable structure.
+---
 
-## What This Is
+## ⚙️ Project Type
 
-This is a **cloneable template repository** designed to help data analysts, scientists, and engineers document their projects the way senior practitioners do - with clarity, structure, and storytelling.
+- [x] SQL Analysis / Querying
+- [x] Dashboard / Data Visualization
+- [x] Data Cleaning / Wrangling
+- [x] End-to-End (multiple of the above)
 
-Every section includes:
-- Plain-language instructions on what to write
-- Examples of strong vs. weak documentation  
-- Guidance on when to keep or delete a section
+---
 
-It works for **any kind of data project:**
-- SQL analysis
-- Python / R exploratory analysis
-- Dashboards (Tableau, Power BI, Looker)
-- Data pipelines / ETL workflows
-- Machine learning / predictive modeling
-- Mixed-method projects
+## Table of Contents
+1. Project Overview  
+2. Objectives  
+3. Project Scope & Tools  
+4. Repository Structure  
+5. Data Workflow  
+6. Analysis & Metrics  
+7. Key Insights  
+8. Recommendations  
+9. Assumptions & Limitations  
+10. Future Enhancements  
+11. Deliverables  
+12. Author  
 
-## Why This Exists
+---
 
-After hundreds of portfolio reviews, the pattern was clear: **the projects that stand out aren't always the most technically sophisticated - they're the ones where the README tells a clear story.**
+## 1. Project Overview
 
-Most data professionals never learn how to document their work. This template fixes that.
+**Context:**  
+This project was completed as part of the Google Cloud Data Analytics Capstone, simulating a real-world business scenario at TheLook Fintech.
 
-## How to Use It
+**Problem Statement:**  
+The Treasury team needed a way to track loan performance, understand borrower behavior, and monitor key metrics like loan distribution and outstanding amounts.
 
-1. Click **"Use this template"** (green button at the top)
-2. Name your new repo after your actual project
-3. Copy the contents of `README_TEMPLATE.md` into your new project's README
-4. Delete folders and sections you don't need
-5. Remove all placeholder text and comments before publishing
+**Approach:**  
+Used BigQuery for data exploration and transformation, and Looker to build an interactive dashboard for visualization.
 
-Full walkthrough: [HOW_TO_USE.md](HOW_TO_USE.md)
+**Outcome:**  
+Developed SQL-based datasets and a dashboard that provides insights into loan trends, borrower distribution, and loan health.
 
-## What's Inside
+---
 
-The template includes:
-- **README_TEMPLATE.md** - The fill-in-the-blank documentation template
-- **project_metadata.yml** - Optional machine-readable metadata
-- **Complete folder structure** - Pre-built folders for data, notebooks, scripts, queries, reports, visuals, and docs
-- **.gitignore** - Pre-configured to exclude data files
+## 2. Objectives
 
-## Who This Is For
+- **Primary Objective:**  
+  Analyze loan data to track trends and key metrics such as loan count and outstanding amounts.
 
-- **Beginners** building their first portfolio project
-- **Early-career analysts** cleaning up existing projects
-- **Career switchers** who have technical skills but need to frame their work
-- **Experienced practitioners** who want a consistent structure
+- **Secondary Objective 1:**  
+  Extract and clean loan purpose data from nested fields.
 
-## Features
+- **Secondary Objective 2:**  
+  Join external region data to understand geographic distribution.
 
-✅ Section-by-section guidance with examples  
-✅ Supports SQL, Python, R, dashboards, pipelines, ML  
-✅ Includes ERD section for SQL projects  
-✅ Pre-built .gitignore for data projects  
-✅ Optional YAML metadata for portfolio automation  
-✅ Delete-what-you-don't-use philosophy  
+- **Secondary Objective 3:**  
+  Build an interactive dashboard for business insights.
 
-## License
+---
 
-MIT License - use this however you want.
+## 3. Project Scope & Tools
 
-## Credits
+### Scope
 
-Created by **Issy BI**
+| Dimension | Details |
+|-----------|--------|
+| **In Scope** | Loan dataset analysis, SQL transformations, dashboard creation |
+| **Out of Scope** | Machine learning, predictive modeling |
+| **Time Period** | 2012 – 2019 |
+| **Granularity** | Loan-level data |
 
-If this helped you, consider starring the repo or sharing it with someone building their data portfolio.
+---
+
+### Tools & Technologies
+
+| Category | Tool(s) Used |
+|----------|-------------|
+| Data Storage | Google BigQuery |
+| Data Processing | SQL |
+| Analysis | BigQuery SQL |
+| Visualization | Looker |
+| Version Control | GitHub |
+| Documentation | Markdown |
+
+---
+
+## 4. Repository Structure
+```
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── queries/
+│ ├── exploratory/
+│ ├── transformations/
+│ └── final/
+│
+├── reports/
+│ ├── final_report.md
+│ └── final_report.pdf
+│
+├── visuals/
+│ ├── dashboard_walkthrough.md
+│ └── images/
+│
+├── docs/
+├── README.md
+```
+
+---
+
+## 5. Data Workflow
+```
+BigQuery Dataset
+↓
+SQL Exploration
+↓
+Data Cleaning & Transformation
+↓
+Analysis Queries
+↓
+Looker Dashboard
+```
+
+1. **Source:** Loan dataset in BigQuery  
+2. **Ingestion:** Direct query access via BigQuery  
+3. **Cleaning:** Removed duplicates, handled nested fields  
+4. **Transformation:** Created tables using JOIN and CTAS  
+5. **Analysis:** Aggregations (COUNT, GROUP BY)  
+6. **Output:** Dashboard + report  
+
+---
+
+## 6. Analysis & Metrics
+
+### Key Metrics
+
+| Metric | Definition | Purpose |
+|--------|-----------|--------|
+| Loan Count | Total number of loans | Track growth |
+| Outstanding Loan Amount | Total unpaid loan value | Measure exposure |
+| Loan Purpose | Reason for loan | Understand behavior |
+| Loan Distribution by State | Loans grouped by state | Geographic insights |
+
+---
+
+## 7. Key Insights
+
+**Insight 1: Loan Growth Over Time**  
+Loan counts increased across years, indicating business expansion.
+
+**Insight 2: Geographic Concentration**  
+Certain states contribute more loans, showing regional demand differences.
+
+**Insight 3: Loan Purpose Patterns**  
+Some loan purposes appear more frequently, indicating common borrower needs.
+
+**Insight 4: Loan Status Distribution**  
+Most loans are active/current, reflecting ongoing financial activity.
+
+---
+
+## 8. Recommendations
+
+| Priority | Recommendation | Based On | Owner |
+|----------|--------------|---------|------|
+| High | Monitor high loan exposure regularly | Loan amount KPI | Treasury |
+| Medium | Focus on high-loan states for growth | Regional analysis | Business team |
+| Low | Analyze borrower segments further | Loan purpose patterns | Analytics |
+
+---
+
+## 9. Assumptions & Limitations
+
+### Assumptions
+- Dataset is complete and accurate  
+- Loan status values are consistent  
+
+### Limitations
+- No customer demographic data  
+- No predictive modeling  
+- Limited to available dataset  
+
+---
+
+## 10. Future Enhancements
+
+- [ ] Add borrower segmentation  
+- [ ] Improve dashboard interactivity  
+- [ ] Automate data updates  
+- [ ] Expand dataset  
+
+---
+
+## 11. Deliverables
+
+| Deliverable | Description | Location |
+|-------------|------------|----------|
+| SQL Queries | Exploration, transformation, final queries | `/queries/` |
+| Dashboard | Loan insights dashboard | `/visuals/` |
+| Report | Final analysis report | `/reports/` |
+
+---
+
+## 12. Author
+
+**Sarthak D**  
+Aspiring Data Analyst  
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/sarthak-deshmukh-066559356/
+- 💼 GitHub: https://github.com/Sarthak-973  
+
+---
+
+*Last updated: 2026*
