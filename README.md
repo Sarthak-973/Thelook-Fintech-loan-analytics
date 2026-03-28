@@ -198,9 +198,9 @@ Most loans are active/current, reflecting ongoing financial activity.
 
 | Deliverable | Description | Location |
 |-------------|------------|----------|
-| SQL Queries | Exploration, transformation, final queries | `/queries/` |
-| Dashboard | Loan insights dashboard | `/visuals/` |
-| Report | Final analysis report | `/reports/` |
+| SQL Queries | Exploration, transformation, final queries |  [`queries/`](queries/) |
+| Dashboard | Loan insights dashboard | [`visuals/dashboard_walkthrough.md`](visuals/dashboard_walkthrough.md) |
+| Report | Final analysis report | [`reports/final_report.md`](reports/final_report.md) |
 
 ---
 
