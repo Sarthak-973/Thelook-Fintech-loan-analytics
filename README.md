@@ -106,7 +106,7 @@ Developed SQL-based datasets and a dashboard that provides insights into loan tr
 │ └── images/
 │
 ├── docs/
-├── README.md
+├── data_dictionary.md
 ```
 
 ---
