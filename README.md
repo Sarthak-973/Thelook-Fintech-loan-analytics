@@ -13,18 +13,19 @@
 ---
 
 ## Table of Contents
-1. Project Overview  
-2. Objectives  
-3. Project Scope & Tools  
-4. Repository Structure  
-5. Data Workflow  
-6. Analysis & Metrics  
-7. Key Insights  
-8. Recommendations  
-9. Assumptions & Limitations  
-10. Future Enhancements  
-11. Deliverables  
-12. Author  
+1. [Project Overview](#1-project-overview)
+2. [Objectives](#2-objectives)
+3. [Project Scope & Tools](#3-project-scope--tools)
+4. [Repository Structure](#4-repository-structure)
+5. [Data Workflow](#5-data-workflow)
+6. [Analysis & Metrics](#8-analysis--metrics)
+7. [Key Insights](#9-key-insights)
+8. [Recommendations](#10-recommendations)
+9. [Assumptions & Limitations](#11-assumptions--limitations)
+10. [Future Enhancements](#12-future-enhancements)
+11. [Deliverables](#13-deliverables)
+12. [Author](#14-author)
+ 
 
 ---
 
